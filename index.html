@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Sabpuja Component Lab</title>
+  <meta name="description" content="Internal Sabpuja component, block and design-system preview gallery.">
+  <link rel="stylesheet" href="/assets/css/lab.css">
+</head>
+<body>
+<div class="lab-shell">
+  <header class="lab-header">
+    <div class="lab-header__inner">
+      <a class="lab-brand" href="/"><span class="lab-brand__mark">S</span><span>Sabpuja Component Lab</span></a>
+      <nav class="lab-nav" aria-label="Primary">
+        <a href="/components/">Components</a>
+        <a href="/blocks/">Blocks</a>
+        <a href="/foundations/">Foundations</a>
+        <a href="/tools/image-lab/">Image Lab</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="lab-main">
+    <section class="lab-hero">
+      <p class="lab-eyebrow">Reusable storefront system · v0.1</p>
+      <h1 class="lab-title">Design once. Approve once. Reuse across Sabpuja.</h1>
+      <p class="lab-lead">A live visual library for reusable Shopify sections, smaller UI blocks, brand foundations and performance-safe media. Each approved pattern can be carried into the staging theme without redesigning it page by page.</p>
+      <div class="lab-actions">
+        <a class="lab-button" href="/components/reviews/">Open Component 001 — Reviews</a>
+        <a class="lab-button lab-button--secondary" href="/tools/image-lab/">Open Image Optimization Lab</a>
+      </div>
+    </section>
+
+    <section class="lab-section" aria-labelledby="systems-title">
+      <div class="lab-section__head">
+        <div>
+          <p class="lab-eyebrow">Library structure</p>
+          <h2 class="lab-section-title" id="systems-title">Four working areas</h2>
+          <p class="lab-section-copy">Large reusable sections, atomic blocks, shared visual rules, and an image-performance pipeline live separately so they can evolve without duplication.</p>
+        </div>
+      </div>
+      <div class="lab-grid">
+        <a class="lab-card" href="/components/">
+          <span class="lab-card__id">Sections</span>
+          <h2>Components</h2>
+          <p>Complete reusable storefront sections with approved variants and responsive states.</p>
+          <div class="lab-card__meta"><span class="lab-chip">Reviews first</span><span class="lab-chip">Shopify-ready</span></div>
+        </a>
+        <a class="lab-card" href="/blocks/">
+          <span class="lab-card__id">Primitives</span>
+          <h2>Blocks</h2>
+          <p>Buttons, badges, avatars, trust items, headings, chips, cards and CTA patterns.</p>
+          <div class="lab-card__meta"><span class="lab-chip">Reusable</span><span class="lab-chip">Consistent</span></div>
+        </a>
+        <a class="lab-card" href="/foundations/">
+          <span class="lab-card__id">System</span>
+          <h2>Foundations</h2>
+          <p>Sabpuja colors, typography, spacing, radius, layout widths and interaction rules.</p>
+          <div class="lab-card__meta"><span class="lab-chip">Poppins</span><span class="lab-chip">Inter</span></div>
+        </a>
+        <a class="lab-card" href="/tools/image-lab/">
+          <span class="lab-card__id">Performance</span>
+          <h2>Image Optimization Lab</h2>
+          <p>Image budgets plus an automated AVIF/WebP pipeline with responsive output sizes.</p>
+          <div class="lab-card__meta"><span class="lab-chip">AVIF</span><span class="lab-chip">WebP</span><span class="lab-chip">Responsive</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="lab-section">
+      <div class="lab-note"><strong>Publishing rule:</strong> this lab is a preview surface only. Production Shopify implementation remains in <code>sabpuja/theme</code>, and live-store changes still require staging QA before release.</div>
+    </section>
+  </main>
+
+  <footer class="lab-footer">Sabpuja Component Lab · internal visual reference · noindex</footer>
+</div>
+<script src="/assets/js/lab.js" defer></script>
+</body>
+</html>

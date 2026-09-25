@@ -1,0 +1,43 @@
+name: Optimize storefront images
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/images/source/**'
+      - 'scripts/optimize-images.mjs'
+      - 'package.json'
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install image tooling
+        run: npm install --no-audit --no-fund
+
+      - name: Generate AVIF and WebP variants
+        run: npm run optimize:images
+
+      - name: Commit optimized assets and manifest
+        run: |
+          if git diff --quiet -- assets/images/optimized; then
+            echo "No optimized image changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/images/optimized
+          git commit -m "perf(images): generate optimized AVIF and WebP variants"
+          git push

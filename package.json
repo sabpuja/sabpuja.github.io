@@ -1,0 +1,13 @@
+{
+  "name": "sabpuja-component-lab",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Sabpuja reusable component previews and image optimization tooling",
+  "type": "module",
+  "scripts": {
+    "optimize:images": "node scripts/optimize-images.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.34.3"
+  }
+}
