@@ -6,8 +6,9 @@
   <meta name="robots" content="noindex,nofollow">
   <title>SP-COMP-001 Customer Reviews · Sabpuja Component Lab</title>
   <link rel="stylesheet" href="/assets/css/lab.css">
+  <link rel="stylesheet" href="/assets/css/reviews-product-landing.css">
 </head>
-<body>
+<body class="review-variant-index">
 <header class="lab-header"><div class="lab-header__inner"><a class="lab-brand" href="/"><span class="lab-brand__mark">S</span><span>Sabpuja Component Lab</span></a><nav class="lab-nav" aria-label="Primary"><a aria-current="page" href="/components/">Components</a><a href="/blocks/">Blocks</a><a href="/foundations/">Foundations</a><a href="/tools/image-lab/">Image Lab</a></nav></div></header>
 <main class="lab-main">
   <div class="lab-page-head">
@@ -27,17 +28,38 @@
   </div>
 
 
-  <section class="lab-section" style="margin-top:0">
-    <div class="lab-card" style="min-height:0;background:#FAF5EA;border-color:#BE9148">
-      <span class="lab-card__id">001G · New recommended product landing variant</span>
-      <h2>Full Product Landing Reviews</h2>
-      <p>Responsive 2-column review suite inspired by the Navratri product page. Explore rating distributions, topic filters, sample media, sorting, expandable reviews and a production-safe empty state. Illustrative content is clearly labelled and stays in the lab.</p>
-      <div class="lab-card__meta"><span class="lab-chip">Desktop + tablet + mobile</span><span class="lab-chip">Product-aware</span><span class="lab-chip">Provider-ready</span></div>
-      <p style="margin-top:14px"><a class="lab-button" href="/components/reviews/product-landing/">Open SP-COMP-001G review preview →</a></p>
+  <nav class="review-variant-nav" aria-label="Jump to customer review component variants">
+    <a class="is-featured" href="#variant-001g">001G · Product landing (approved)</a>
+    <a href="#variant-001a">001A · Full hub</a>
+    <a href="#variant-001b">001B · Homepage</a>
+    <a href="#variant-001c">001C · Media-first</a>
+    <a href="#variant-001d">001D · Compact</a>
+    <a href="#variant-001e">001E · Product/PDP</a>
+    <a href="#variant-001f">001F · Collection</a>
+  </nav>
+
+  <section class="demo-section rr-page" id="variant-001g" aria-labelledby="variant-001g-heading">
+    <div class="demo-section__meta"><div><h2 id="variant-001g-heading">001G · Product Landing Reviews</h2><p>Approved layout reference for every product landing page. Review app integration comes later.</p></div><span class="lab-chip">Recommended product design</span></div>
+    <div class="rr-toolbar" aria-label="Review component preview settings">
+    <div class="rr-toolgroup"><label for="rrProduct">Product context</label><select id="rrProduct"><option value="Navratri Puja Kit">Navratri Puja Kit</option><option value="Daily Puja Kit">Daily Puja Kit</option><option value="Diwali Puja Kit">Diwali Puja Kit</option><option value="Astrology Remedy Kit">Astrology Remedy Kit</option></select></div>
+    <div class="rr-toolgroup" aria-label="Data state"><button type="button" data-rr-mode="example" aria-pressed="true">Illustrative layout</button><button type="button" data-rr-mode="safe" aria-pressed="false">Production-safe</button></div>
+
+  </div>
+    <div class="demo-frame rr-viewport" data-viewport="desktop">
+      <div class="rr-demo" id="rrRoot">
+        <div class="rr-design-flag" id="rrFlag"><strong>DESIGN SAMPLE ONLY.</strong> Ratings, counts, quotes and media tiles below are illustrative placeholders, not verified customer feedback. Never publish these values to Shopify.</div>
+        <div class="rr-inner">
+          <header class="rr-header"><div><p class="rr-kicker">Customer experiences</p><h2>Customer reviews</h2><p id="rrSubtitle">Explore the review section for Navratri Puja Kit.</p></div><a class="rr-btn" id="rrWrite" href="mailto:support@sabpuja.com?subject=Product%20review">Write a review ↗</a></header>
+          <div class="rr-main" id="rrMount" aria-live="polite"></div>
+          <div class="rr-endnote" id="rrEndnote">Component preview only. In production, ratings, purchase verification, dates, photos and product relationships must be supplied by the approved review provider. No review belongs to a product unless linked by product ID.</div>
+        </div>
+      </div>
     </div>
+    <p style="margin:12px 2px 2px;font-size:13px;color:#64534a">This interactive preview uses labelled example data only. The customer review app and Shopify integration are deferred. <a href="/components/reviews/product-landing/" style="color:#681E30;font-weight:700">Open standalone full-screen preview ↗</a></p>
+    <div class="rr-modal" id="rrModal" role="dialog" aria-modal="true" aria-labelledby="rrModalTitle" hidden><div class="rr-dialog"><button type="button" class="rr-close" id="rrModalClose" aria-label="Close photo preview">×</button><div class="rr-modal-visual" id="rrModalVisual">SAMPLE MEDIA</div><h3 id="rrModalTitle">Illustrative media slot</h3><p>This is a visual placeholder, not a customer photo. Real images can appear here only when attached to an authenticated review.</p></div></div>
   </section>
 
-  <section class="demo-section">
+  <section class="demo-section" id="variant-001a">
     <div class="demo-section__meta"><div><h2>001A · Full Review Hub</h2><p>Campaign, collection and high-intent landing pages</p></div><span class="lab-chip">Full</span></div>
     <div class="demo-frame" data-viewport="desktop">
       <div class="sp-section sp-section--ivory">
@@ -57,7 +79,7 @@
     </div>
   </section>
 
-  <section class="demo-section">
+  <section class="demo-section" id="variant-001b">
     <div class="demo-section__meta"><div><h2>001B · Homepage Carousel</h2><p>Compact social proof for the homepage</p></div><span class="lab-chip">Recommended homepage</span></div>
     <div class="demo-frame" data-viewport="desktop">
       <div class="sp-section sp-section--cream">
@@ -77,7 +99,7 @@
     </div>
   </section>
 
-  <section class="demo-section">
+  <section class="demo-section" id="variant-001c">
     <div class="demo-section__meta"><div><h2>001C · Media-first</h2><p>Activates when authenticated customer media exists</p></div><span class="lab-chip">Media optional</span></div>
     <div class="demo-frame" data-viewport="desktop">
       <div class="sp-section">
@@ -94,21 +116,21 @@
     </div>
   </section>
 
-  <section class="demo-section">
+  <section class="demo-section" id="variant-001d">
     <div class="demo-section__meta"><div><h2>001D · Compact</h2><p>Small footprint for secondary landing pages</p></div><span class="lab-chip">Compact</span></div>
     <div class="demo-frame" data-viewport="desktop">
       <div class="sp-section sp-section--ivory"><div class="sp-container"><div class="review-head"><div class="review-head__copy"><p class="sp-kicker">Customer experiences</p><h3 class="sp-heading">A few words from our customers</h3></div></div><div class="review-compact"><article class="review-card"><div class="review-person"><span class="review-avatar">K</span><span class="review-name">Karan Verma</span></div><blockquote>Bohot hi badhiya pooja box hai. Kapoor aur haldi ki khushboo bohot pure hai.</blockquote></article><article class="review-card"><div class="review-person"><span class="review-avatar">A</span><span class="review-name">Amit Deshmukh</span></div><blockquote>The quality of the dhoop cones and Mauli thread is excellent.</blockquote></article></div></div></div>
     </div>
   </section>
 
-  <section class="demo-section">
+  <section class="demo-section" id="variant-001e">
     <div class="demo-section__meta"><div><h2>001E · Product / PDP</h2><p>One highlighted review plus supporting customer feedback</p></div><span class="lab-chip">Product</span></div>
     <div class="demo-frame" data-viewport="desktop">
       <div class="sp-section"><div class="sp-container"><div class="review-head"><div class="review-head__copy"><p class="sp-kicker">Customer feedback</p><h3 class="sp-heading">Used in real rituals at home</h3></div></div><div class="review-pdp"><article class="review-featured"><div class="review-person"><span class="review-avatar">V</span><span class="review-name">Vidya Reddy</span></div><blockquote>I bought this for our housewarming Satyanarayan katha. The pandit ji was highly impressed seeing how organized everything was.</blockquote></article><div class="review-list"><article class="review-card"><div class="review-person"><span class="review-avatar">S</span><span class="review-name">Sunita Rao</span></div><blockquote>He easily managed the whole katha without panicking about missing items.</blockquote></article><article class="review-card"><div class="review-person"><span class="review-avatar">R</span><span class="review-name">Rajesh Gupta</span></div><blockquote>Saved me a trip to three different shops.Thank you sabpuja</blockquote></article></div></div></div></div>
     </div>
   </section>
 
-  <section class="demo-section">
+  <section class="demo-section" id="variant-001f">
     <div class="demo-section__meta"><div><h2>001F · Collection</h2><p>Broad trust section when reviews span multiple products</p></div><span class="lab-chip">Collection</span></div>
     <div class="demo-frame" data-viewport="desktop">
       <div class="sp-section sp-section--dark"><div class="sp-container"><div class="review-head"><div class="review-head__copy"><p class="sp-kicker">Across Sabpuja</p><h3 class="sp-heading">Thoughtful products for everyday and occasion-based rituals</h3><p class="sp-copy">A collection-level layout for feedback that is not tied to one specific SKU.</p></div></div><div class="review-grid"><article class="review-card"><div class="review-person"><span class="review-avatar">K</span><span class="review-name">Kavita Mishra</span></div><blockquote>Bought this asamgri collection to start doing a simple prayer every morning after meditation.</blockquote></article><article class="review-card"><div class="review-person"><span class="review-avatar">P</span><span class="review-name">Priya Singh</span></div><blockquote>The freshness of the samagri and the neat packaging made the experience peaceful and meaningful.</blockquote></article><article class="review-card"><div class="review-person"><span class="review-avatar">M</span><span class="review-name">Meena Kulkarni</span></div><blockquote>The samagri quality feels good. I bought this for weekly rituals and it’s turned out to be a complete, convenient kit that saves time and stress.</blockquote></article></div></div></div>
@@ -121,5 +143,6 @@
 </main>
 <footer class="lab-footer">SP-COMP-001 · Customer Reviews · Sabpuja Component Lab</footer>
 <script src="/assets/js/lab.js" defer></script>
+<script src="/assets/js/reviews-product-landing.js" defer></script>
 </body>
 </html>
