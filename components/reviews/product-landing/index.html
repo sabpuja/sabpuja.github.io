@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>SP-COMP-001G Product Landing Reviews | Sabpuja Component Lab</title>
+  <link rel="stylesheet" href="/assets/css/lab.css">
+  <style>
+    .rr-page{--rr-ivory:#FAF5EA;--rr-maroon:#681E30;--rr-gold:#BE9148;--rr-beige:#E9D9BA;--rr-ink:#2F2926;--rr-line:#eadfd1;--rr-muted:#766c65}
+    .rr-intro{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .rr-intro p{max-width:820px}
+    .rr-link{color:var(--rr-maroon);font-size:14px;font-weight:700}
+    .rr-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;background:white;padding:13px 16px;border:1px solid #e3d9ce;border-radius:16px;margin-bottom:15px}
+    .rr-toolgroup{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+    .rr-toolgroup label{font-size:12px;font-weight:750;color:#61534b}
+    .rr-toolgroup select,.rr-toolgroup button{font:inherit;font-size:13px;border:1px solid #d8c8b7;background:#fff;border-radius:9px;min-height:38px;padding:7px 12px;cursor:pointer;color:var(--rr-ink)}
+    .rr-toolgroup button[aria-pressed="true"]{background:var(--rr-maroon);border-color:var(--rr-maroon);color:white}
+    .rr-viewport{padding:0;overflow:hidden;container-type:inline-size;max-width:1200px}
+    .rr-demo{background:#fffdf8;color:var(--rr-ink);font-family:Inter,Arial,sans-serif}
+    .rr-demo button,.rr-demo select{font:inherit}
+    .rr-design-flag{background:#f7e9d3;border-bottom:1px solid #e8d2b3;padding:10px 24px;color:#644a26;font-size:12px;line-height:1.5}
+    .rr-design-flag strong{font-weight:850}
+    .rr-inner{padding:clamp(20px,4.3vw,48px);max-width:1160px;margin:0 auto}
+    .rr-kicker{color:var(--rr-maroon);font-weight:800;letter-spacing:.13em;text-transform:uppercase;font-size:10px;margin:0 0 10px}
+    .rr-header{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:24px}
+    .rr-header h2{font:700 clamp(27px,3.3vw,38px)/1.15 Georgia,serif;color:var(--rr-maroon);margin:0 0 7px}
+    .rr-header p{font-size:13px;color:var(--rr-muted);margin:0;max-width:560px}
+    .rr-btn{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:10px 16px;background:var(--rr-maroon);border:1px solid var(--rr-maroon);color:white;border-radius:8px;cursor:pointer;font-weight:700;text-decoration:none;font-size:12px;white-space:nowrap}
+    .rr-btn--line{background:transparent;color:var(--rr-maroon)}
+    .rr-btn:hover,.rr-topic:hover,.rr-media:hover{filter:brightness(.96)}
+    .rr-main{display:grid;grid-template-columns:minmax(218px,.68fr) minmax(0,1.55fr);gap:24px;align-items:start}
+    .rr-summary{border:1px solid var(--rr-line);background:var(--rr-ivory);padding:22px;border-radius:14px;position:relative}
+    .rr-summary__eyebrow{font-size:11px;font-weight:750;color:var(--rr-muted);text-transform:uppercase;letter-spacing:.06em}
+    .rr-average{font:700 62px/.95 Georgia,serif;color:var(--rr-maroon);letter-spacing:-.06em;margin:13px 0 4px}
+    .rr-stars{letter-spacing:2px;color:var(--rr-gold);font-size:18px;white-space:nowrap}
+    .rr-rating-caption{color:var(--rr-muted);font-size:12px;margin:7px 0 19px}
+    .rr-bars{display:grid;gap:8px}
+    .rr-bar{display:grid;grid-template-columns:42px 1fr 36px;gap:7px;align-items:center;font-size:11px;color:var(--rr-muted)}
+    .rr-track{height:6px;background:#eadccc;border-radius:100px;overflow:hidden}
+    .rr-fill{display:block;height:100%;background:var(--rr-gold);border-radius:100px}
+    .rr-divider{height:1px;background:var(--rr-line);margin:22px 0}
+    .rr-asideheading{margin:0 0 9px;font-size:13px;font-weight:800}
+    .rr-small{font-size:12px;color:var(--rr-muted);line-height:1.65}
+    .rr-side-list{margin:0;padding-left:18px;font-size:12px;color:#6e5b51;line-height:2}
+    .rr-content{min-width:0}
+    .rr-title-row{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+    .rr-section-title{font:700 19px/1.3 Georgia,serif;color:var(--rr-ink);margin:0 0 12px}
+    .rr-meta{font-size:11px;color:var(--rr-muted)}
+    .rr-topics{display:flex;gap:7px;overflow-x:auto;scrollbar-width:thin;padding:1px 0 10px;margin-bottom:13px}
+    .rr-topic{white-space:nowrap;border:1px solid var(--rr-line);border-radius:100px;background:#fff;color:#684b41;font-size:11px;padding:8px 12px;cursor:pointer}
+    .rr-topic[aria-pressed="true"]{background:var(--rr-maroon);border-color:var(--rr-maroon);color:white}
+    .rr-media-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin-bottom:23px}
+    .rr-media{padding:0;min-width:0;border:1px solid #e4d1bd;background:linear-gradient(135deg,#f7ddbd,#fff6e9 49%,#dcc2a6);border-radius:9px;aspect-ratio:1/1;cursor:pointer;position:relative;overflow:hidden}
+    .rr-media:after{content:'';display:block;position:absolute;width:58%;height:58%;left:21%;top:18%;border-radius:12px;background:linear-gradient(125deg,#aa6f48,#e9c99d 50%,#752b3b);opacity:.65}
+    .rr-media span{position:absolute;z-index:1;bottom:0;left:0;right:0;background:rgba(47,41,38,.82);color:white;font-size:9px;padding:5px 2px}
+    .rr-filterbar{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--rr-line);padding:16px 0 13px;gap:12px;flex-wrap:wrap}
+    .rr-filterbar label{color:var(--rr-muted);font-size:12px}
+    .rr-filterbar select{border:1px solid #e2d4c7;border-radius:7px;background:white;color:var(--rr-ink);padding:7px;font-size:11px;max-width:150px}
+    .rr-reviews{display:grid;gap:12px}
+    .rr-review{background:white;border:1px solid var(--rr-line);padding:17px 18px;border-radius:11px}
+    .rr-reviewhead{display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .rr-person{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:750}
+    .rr-avatar{display:grid;place-items:center;background:#f0e4d8;color:var(--rr-maroon);border:1px solid #e3d2be;border-radius:50%;width:32px;height:32px;flex:0 0 32px;font-weight:750}
+    .rr-rating{color:var(--rr-gold);font-size:14px;letter-spacing:1px}
+    .rr-review h4{font-size:13px;margin:9px 0 5px;font-weight:800}
+    .rr-review p{margin:0;font-size:12px;color:#625952;line-height:1.7}
+    .rr-reviewfoot{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}
+    .rr-topic-tag{border-radius:99px;color:#75554f;background:#f7efe4;padding:4px 8px;font-size:10px}
+    .rr-example-tag{font-size:10px;color:#8a5a27}
+    .rr-more{margin:17px auto 0;display:block;border:1px solid #c9a185;color:var(--rr-maroon);border-radius:8px;background:#fffaf4;font-size:12px;padding:10px 20px;cursor:pointer;font-weight:750}
+    .rr-empty{text-align:center;border:1px dashed #d8bfa4;border-radius:13px;padding:40px 20px;background:#fff9ef}
+    .rr-empty h3{font:700 22px Georgia,serif;color:var(--rr-maroon);margin:12px 0}
+    .rr-empty p{font-size:13px;max-width:420px;margin:0 auto 20px;color:var(--rr-muted)}
+    .rr-empty-icon{font-size:30px;color:var(--rr-gold)}
+    .rr-endnote{border-top:1px solid var(--rr-line);margin-top:26px;padding-top:13px;font-size:11px;color:var(--rr-muted);line-height:1.7}
+    .rr-modal[hidden]{display:none}
+    .rr-modal{position:fixed;inset:0;z-index:100;background:rgba(20,15,13,.75);display:grid;place-items:center;padding:22px}
+    .rr-dialog{width:min(550px,100%);background:#fffaf2;border-radius:15px;padding:25px;box-shadow:0 25px 70px #0005;position:relative}
+    .rr-dialog h3{margin:12px 0 6px;color:var(--rr-maroon);font:700 23px Georgia,serif}
+    .rr-dialog p{font-size:13px;color:var(--rr-muted)}
+    .rr-modal-visual{height:230px;border:1px dashed #d5b18e;border-radius:10px;display:grid;place-items:center;background:linear-gradient(145deg,#fff8e7,#f2d0a7,#8e5360);color:var(--rr-maroon);font-weight:850}
+    .rr-close{position:absolute;top:12px;right:12px;width:34px;height:34px;border:1px solid #e4d5c5;border-radius:50%;background:white;cursor:pointer;font-size:20px}
+    .rr-note-panel{margin:24px 0;padding:20px 22px;border:1px solid #e2d3c3;border-radius:13px;background:#fffaf0}
+    .rr-note-panel h3{margin:0 0 8px;color:var(--rr-maroon);font-size:15px}
+    .rr-note-panel p{font-size:13px;margin:0;color:#645650;line-height:1.7}
+    .rr-demo :focus-visible{outline:3px solid #be9148;outline-offset:3px}
+    @container (max-width:850px){
+      .rr-inner{padding:24px 20px}.rr-main{grid-template-columns:1fr}.rr-summary{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px}.rr-summary .rr-divider{display:none}
+      .rr-summary .rr-bars{grid-column:2;grid-row:1/4}.rr-summary .rr-small{grid-column:1}.rr-media-grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+    }
+    @container (max-width:520px){
+      .rr-inner{padding:22px 15px}.rr-header{align-items:start;flex-direction:column}.rr-header h2{font-size:29px}.rr-main{gap:15px}.rr-summary{display:block;padding:17px}
+      .rr-media-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.rr-review{padding:14px}.rr-person{font-size:11px}
+      .rr-filterbar{align-items:start}.rr-stars{font-size:16px}.rr-avg{font-size:42px}
+    }
+    @media(max-width:700px){.rr-toolbar{flex-direction:column;align-items:stretch}.rr-toolgroup{justify-content:space-between}}
+  </style>
+</head>
+<body class="rr-page">
+<header class="lab-header"><div class="lab-header__inner"><a class="lab-brand" href="/"><span class="lab-brand__mark" aria-hidden="true">S</span><span>Sabpuja Component Lab</span></a><nav class="lab-nav" aria-label="Primary"><a aria-current="page" href="/components/">Components</a><a href="/blocks/">Blocks</a><a href="/foundations/">Foundations</a><a href="/tools/image-lab/">Image Lab</a></nav></div></header>
+<main class="lab-main">
+  <div class="lab-page-head rr-intro">
+    <div>
+      <div class="lab-breadcrumb"><a href="/components/">Components</a> / <a href="/components/reviews/">Customer Reviews</a> / Product Landing</div>
+      <p class="lab-eyebrow">SP-COMP-001G · Proposed standard for product landing pages</p>
+      <h1>Product Landing Reviews</h1>
+      <p>One consistent reviews section for Navratri, Daily Puja, festival kits, astrology remedy kits and every future Sabpuja product. Test the complete visual design and the production-safe empty state before Shopify staging integration.</p>
+      <a class="rr-link" href="/components/reviews/">← All review variants</a>
+    </div>
+  </div>
+  <div class="rr-toolbar" aria-label="Review component preview settings">
+    <div class="rr-toolgroup"><label for="rrProduct">Product context</label><select id="rrProduct"><option value="Navratri Puja Kit">Navratri Puja Kit</option><option value="Daily Puja Kit">Daily Puja Kit</option><option value="Diwali Puja Kit">Diwali Puja Kit</option><option value="Astrology Remedy Kit">Astrology Remedy Kit</option></select></div>
+    <div class="rr-toolgroup" aria-label="Data state"><button type="button" data-rr-mode="example" aria-pressed="true">Illustrative layout</button><button type="button" data-rr-mode="safe" aria-pressed="false">Production-safe</button></div>
+    <div class="rr-toolgroup" aria-label="Viewport"><button type="button" data-demo-viewport="desktop" aria-pressed="true" class="is-active">Desktop</button><button type="button" data-demo-viewport="tablet" aria-pressed="false">Tablet</button><button type="button" data-demo-viewport="mobile" aria-pressed="false">Mobile</button></div>
+  </div>
+  <div class="demo-section" style="padding:12px">
+    <div class="demo-frame rr-viewport" data-viewport="desktop">
+      <div class="rr-demo" id="rrRoot">
+        <div class="rr-design-flag" id="rrFlag"><strong>DESIGN SAMPLE ONLY.</strong> Ratings, counts, quotes and media tiles below are illustrative placeholders, not verified customer feedback. Never publish these values to Shopify.</div>
+        <div class="rr-inner">
+          <header class="rr-header"><div><p class="rr-kicker">Customer experiences</p><h2>Customer reviews</h2><p id="rrSubtitle">Explore the review section for Navratri Puja Kit.</p></div><a class="rr-btn" id="rrWrite" href="mailto:support@sabpuja.com?subject=Product%20review">Write a review ↗</a></header>
+          <div class="rr-main" id="rrMount" aria-live="polite"></div>
+          <div class="rr-endnote" id="rrEndnote">Component preview only. In production, ratings, purchase verification, dates, photos and product relationships must be supplied by the approved review provider. No review belongs to a product unless linked by product ID.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="rr-note-panel"><h3>Shopify staging implementation rules</h3><p>Reusable section with product ID binding, editable headings, provider-backed reviews and responsive media. Show a real average and rating distribution only when the provider supplies both. Show verified-purchase labels only when verified status is confirmed. Hide customer media without attached, approved files. Empty products show a clean first-review state. Do not carry illustrative review records or counts onto the live store.</p></div>
+</main>
+<div class="rr-modal" id="rrModal" role="dialog" aria-modal="true" aria-labelledby="rrModalTitle" hidden><div class="rr-dialog"><button type="button" class="rr-close" id="rrModalClose" aria-label="Close photo preview">×</button><div class="rr-modal-visual" id="rrModalVisual">SAMPLE MEDIA</div><h3 id="rrModalTitle">Illustrative media slot</h3><p>This is a visual placeholder, not a customer photo. Real images can appear here only when attached to an authenticated review.</p></div></div>
+<footer class="lab-footer">SP-COMP-001G · Product Landing Reviews · Sabpuja Component Lab</footer>
+<script src="/assets/js/lab.js" defer></script>
+<script>
+(function () {
+  'use strict';
+  var sample = [
+    {id:1,topic:'Packaging',rating:5,title:'Neat, compact and easy to keep near the mandir',body:'Everything feels organized instead of scattered in different drawers. The presentation is what I liked most.'},
+    {id:2,topic:'Festival preparation',rating:5,title:'Helpful for festival preparation',body:'I wanted the small essentials organized before the festival instead of buying everything separately. This format makes preparation much easier.'},
+    {id:3,topic:'Gifting',rating:5,title:'Gift-friendly presentation',body:'The organized presentation made it feel thoughtful without being overdone. It looked clean and practical.'},
+    {id:4,topic:'Ease of use',rating:4,title:'Good concept and easy to understand',body:'The kit format is convenient and the contents are easy to scan. I would love refill options later as well.'},
+    {id:5,topic:'Packaging',rating:5,title:'Clean and practical',body:'I liked that the presentation feels devotional but still clean and modern. The packaging is easy to keep organized.'},
+    {id:6,topic:'Festival preparation',rating:5,title:'A helpful starting point',body:'Simple, well arranged and easy for everyone at home to understand before preparation begins.'}
+  ];
+  var state = {mode:'example',product:'Navratri Puja Kit',topic:'All',sort:'featured',expanded:false};
+  var mount = document.getElementById('rrMount');
+  var flag = document.getElementById('rrFlag');
+  var modal = document.getElementById('rrModal');
+  var closeButton = document.getElementById('rrModalClose');
+  var lastMedia = null;
+  function escapeHtml(value){return String(value).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  function mailLink(){return 'mailto:support@sabpuja.com?subject='+encodeURIComponent('Product review: '+state.product);}
+  function side(){
+    if(state.mode==='safe'){
+      return '<aside class="rr-summary"><span class="rr-summary__eyebrow">Product feedback</span><h3 class="rr-section-title" style="margin-top:17px">Your experience matters.</h3><p class="rr-small">Product-specific star ratings and customer stories will appear here when approved reviews are connected.</p><div class="rr-divider"></div><p class="rr-asideheading">What customers can share</p><ul class="rr-side-list"><li>Packaging and presentation</li><li>How the kit helped prepare</li><li>Product quality and usability</li></ul></aside>';
+    }
+    var percentages=[93,5,1,1,0];
+    var bars=percentages.map(function(p,i){return '<div class="rr-bar"><span>'+(5-i)+' star</span><div class="rr-track"><span class="rr-fill" style="width:'+p+'%"></span></div><span>'+p+'%</span></div>';}).join('');
+    return '<aside class="rr-summary"><span class="rr-summary__eyebrow">Sample overall rating</span><div class="rr-average">4.9</div><div class="rr-stars" aria-label="Five illustrative stars">★★★★★</div><p class="rr-rating-caption">128 sample ratings · not actual reviews</p><div class="rr-bars" aria-label="Illustrative rating distribution">'+bars+'</div><div class="rr-divider"></div><p class="rr-asideheading">Review this product</p><p class="rr-small">Share your experience with other Sabpuja customers.</p><a class="rr-btn rr-btn--line" href="'+escapeHtml(mailLink())+'">Write a product review ↗</a><div class="rr-divider"></div><p class="rr-asideheading">What shoppers find useful</p><ul class="rr-side-list"><li>Packaging and presentation</li><li>Festival preparation</li><li>Gifting and ease of use</li></ul></aside>';
+  }
+  function filtered(){
+    var list=sample.filter(function(r){return state.topic==='All'||r.topic===state.topic;});
+    if(state.sort==='highest')list.sort(function(a,b){return b.rating-a.rating||a.id-b.id;});
+    if(state.sort==='recent')list.sort(function(a,b){return b.id-a.id;});
+    return list;
+  }
+  function reviewCard(r){
+    return '<article class="rr-review"><div class="rr-reviewhead"><div class="rr-person"><span class="rr-avatar" aria-hidden="true">'+String(r.id).padStart(2,'0')+'</span><span>Example review '+String(r.id).padStart(2,'0')+'</span></div><span class="rr-rating" aria-label="'+r.rating+' sample stars">'+('★'.repeat(r.rating))+'</span></div><h4>'+escapeHtml(r.title)+'</h4><p>'+escapeHtml(r.body)+'</p><div class="rr-reviewfoot"><span class="rr-topic-tag">'+escapeHtml(r.topic)+'</span><span class="rr-example-tag">Illustrative copy · not a verified customer</span></div></article>';
+  }
+  function render(){
+    document.getElementById('rrSubtitle').textContent='Product-specific reviews and experiences for '+state.product+'.';
+    document.getElementById('rrWrite').href=mailLink();
+    flag.textContent=state.mode==='example'?'DESIGN SAMPLE ONLY. All metrics, quotes and media tiles are illustrative placeholders, not real customer evidence. Do not publish.':'PRODUCTION-SAFE PREVIEW. No approved product-linked review records are connected. Nothing is invented or carried over from another product.';
+    document.querySelectorAll('[data-rr-mode]').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-rr-mode')===state.mode?'true':'false');});
+    if(state.mode==='safe'){
+      mount.innerHTML=side()+'<div class="rr-content"><h3 class="rr-section-title">Reviews for '+escapeHtml(state.product)+'</h3><div class="rr-empty"><div class="rr-empty-icon" aria-hidden="true">✧</div><h3>Be among the first to share.</h3><p>Once authentic product-specific reviews are approved, they will appear here. Your experience can help others prepare with confidence.</p><a class="rr-btn" href="'+escapeHtml(mailLink())+'">Share your experience ↗</a></div></div>';
+      return;
+    }
+    var topics=['All','Festival preparation','Packaging','Gifting','Ease of use'];
+    var chips=topics.map(function(t){return '<button class="rr-topic" type="button" data-topic="'+escapeHtml(t)+'" aria-pressed="'+(state.topic===t?'true':'false')+'">'+escapeHtml(t)+'</button>';}).join('');
+    var media=Array.from({length:6},function(_,i){return '<button class="rr-media" type="button" data-media="'+(i+1)+'" aria-label="Open sample media tile '+(i+1)+'"><span>Sample '+String(i+1).padStart(2,'0')+'</span></button>';}).join('');
+    var records=filtered();
+    var shown=state.expanded?records:records.slice(0,3);
+    var more=records.length>3?'<button class="rr-more" type="button" data-more>'+ (state.expanded?'Show fewer reviews':'See more reviews ('+(records.length-3)+')')+'</button>':'';
+    var sort='<label for="rrSort">Sort sample reviews: </label><select id="rrSort"><option value="featured"'+(state.sort==='featured'?' selected':'')+'>Featured</option><option value="recent"'+(state.sort==='recent'?' selected':'')+'>Newest sample first</option><option value="highest"'+(state.sort==='highest'?' selected':'')+'>Highest rating</option></select>';
+    mount.innerHTML=side()+'<div class="rr-content"><div class="rr-title-row"><h3 class="rr-section-title">Customers say</h3><span class="rr-meta">Illustrative themes only</span></div><div class="rr-topics" aria-label="Filter sample reviews by topic">'+chips+'</div><div class="rr-title-row"><h3 class="rr-section-title">Reviews with images</h3><span class="rr-meta">Tap a sample tile</span></div><div class="rr-media-grid">'+media+'</div><div class="rr-filterbar"><span class="rr-meta">'+records.length+' sample review'+(records.length===1?'':'s')+'</span><div>'+sort+'</div></div><div class="rr-reviews">'+shown.map(reviewCard).join('')+'</div>'+more+'</div>';
+  }
+  document.querySelectorAll('[data-rr-mode]').forEach(function(button){button.addEventListener('click',function(){state.mode=button.getAttribute('data-rr-mode');state.topic='All';state.expanded=false;render();});});
+  document.getElementById('rrProduct').addEventListener('change',function(e){state.product=e.target.value;state.topic='All';state.expanded=false;render();});
+  mount.addEventListener('click',function(e){
+    var topic=e.target.closest('[data-topic]');
+    if(topic){state.topic=topic.getAttribute('data-topic');state.expanded=false;render();return;}
+    if(e.target.closest('[data-more]')){state.expanded=!state.expanded;render();return;}
+    var media=e.target.closest('[data-media]');
+    if(media){lastMedia=media;document.getElementById('rrModalVisual').textContent='SAMPLE MEDIA '+media.getAttribute('data-media');modal.hidden=false;closeButton.focus();}
+  });
+  mount.addEventListener('change',function(e){if(e.target.id==='rrSort'){state.sort=e.target.value;render();}});
+  function closeModal(){modal.hidden=true;if(lastMedia&&document.contains(lastMedia))lastMedia.focus();}
+  closeButton.addEventListener('click',closeModal);
+  modal.addEventListener('click',function(e){if(e.target===modal)closeModal();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!modal.hidden)closeModal();if(e.key==='Tab'&&!modal.hidden){e.preventDefault();closeButton.focus();}});
+  render();
+}());
+</script>
+</body>
+</html>
